@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Steps – Volunteer Walking Group Leaders</title>
+
+  <style>
+    :root {
+      --green: #2f6f5e;
+      --green-dark: #245649;
+      --green-light: #e8f3ef;
+      --cream: #f8faf8;
+      --text: #222222;
+      --white: #ffffff;
+      --border: #d7e3de;
+      --accent: #e7a93f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Century Gothic", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    header {
+      background: var(--green);
+      color: var(--white);
+      padding: 34px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.15;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 34px auto;
+      padding: 0 20px 50px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+    }
+
+    .hero-card h2 {
+      color: var(--green-dark);
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    .hero-card p {
+      margin: 0 0 14px;
+    }
+
+    .image-placeholder {
+      min-height: 290px;
+      border-radius: 16px;
+      background:
+        linear-gradient(rgba(47, 111, 94, 0.12), rgba(47, 111, 94, 0.12)),
+        url("walking-group.jpg") center/cover no-repeat;
+      border: 3px solid var(--green-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--green-dark);
+      font-weight: bold;
+      padding: 20px;
+    }
+
+    .image-placeholder span {
+      background: rgba(255, 255, 255, 0.88);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+
+    .section-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 24px;
+    }
+
+    .section-card h2 {
+      color: var(--green-dark);
+      font-size: 30px;
+      margin: 0 0 16px;
+    }
+
+    .section-card h3 {
+      color: var(--green-dark);
+      font-size: 24px;
+      margin: 22px 0 8px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .detail-box {
+      background: var(--green-light);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .detail-box strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .contact-card {
+      background: var(--green);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 28px;
+    }
+
+    .contact-card h2 {
+      margin: 0 0 12px;
+      font-size: 30px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border-radius: 50%;
+      background: var(--white);
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e4037;
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      font-size: 17px;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 19px;
+      }
+
+      .hero-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-placeholder {
+        min-height: 230px;
+      }
+    }
+
+    @media print {
+      footer {
+        display: none;
+      }
+
+      body {
+        background: white;
+        font-size: 16px;
+      }
+
+      main {
+        margin: 0;
+        max-width: none;
+      }
+
+      .hero-card,
+      .section-card,
+      .contact-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Community Steps</h1>
+  </header>
+
+  <main>
+    <section class="hero-card">
+      <div>
+        <h2>Volunteer Walking Group Leaders Needed</h2>
+        <p>
+          We are looking for friendly volunteers to lead new walking groups
+          for people aged 60 and over.
+        </p>
+        <p>
+          Walking groups help older people stay active, meet others and feel
+          more connected to their local community.
+        </p>
+      </div>
+
+      <div class="senior walking group.jpg" role="img"
+           aria-label="A group of older people walking together in a park">
+        <span>senior walking group.jpg</span>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>What will you do?</h2>
+      <p>As a volunteer walking group leader, you will:</p>
+      <ul>
+        <li>welcome people to the walking group</li>
+        <li>lead a safe and friendly local walk</li>
+        <li>encourage group members to walk together</li>
+        <li>help new members feel comfortable</li>
+        <li>contact the program organiser when needed</li>
+      </ul>
+
+      <div class="details-grid">
+        <div class="detail-box">
+          <strong>Location</strong>
+          Walking groups will be held in local areas across South Western Sydney.
+        </div>
+
+        <div class="detail-box">
+          <strong>Group members</strong>
+          The groups are for people aged 60 and over.
+        </div>
+
+        <div class="detail-box">
+          <strong>Time</strong>
+          Most walks will take place on weekday mornings.
+        </div>
+
+        <div class="detail-box">
+          <strong>Length of walk</strong>
+          Each walk will take about 45 to 60 minutes.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Who are we looking for?</h2>
+      <p>You may be suitable for this role if you:</p>
+      <ul>
+        <li>enjoy walking and meeting new people</li>
+        <li>are friendly, patient and reliable</li>
+        <li>can communicate clearly with a small group</li>
+        <li>are interested in helping older people</li>
+        <li>can attend regularly</li>
+      </ul>
+
+      <h3>Do I need experience?</h3>
+      <p>
+        You do not need to be a fitness instructor. However, volunteers must
+        feel comfortable leading a small group.
+      </p>
+    </section>
+
+        <section class="contact-card">
+      <h2>Contact us</h2>
+
+      <div class="contact-row">
+        <div class="contact-icon" aria-hidden="true">✉</div>
+        <div>Email the organiser if you would like to know more. 
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   Mock webpage for classroom use. Not a real service.
+  </footer>
+</body>
+</html>
